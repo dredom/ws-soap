@@ -6,8 +6,25 @@
   <packaging>war</packaging>
   <version>1.0-SNAPSHOT</version>
   <name>ws-soap Maven Webapp</name>
-  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+  
   <dependencies>
+    <dependency>
+      <groupId>com.sun.xml.ws</groupId>
+      <artifactId>jaxws-rt</artifactId>
+      <version>2.2.10</version>
+    </dependency>    
+<!-- https://mvnrepository.com/artifact/com.sun.istack/istack-commons-runtime -->
+<dependency>
+    <groupId>com.sun.istack</groupId>
+    <artifactId>istack-commons-runtime</artifactId>
+    <version>3.0.5</version>
+</dependency>
+ 
+    
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
@@ -15,7 +32,7 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+
   <build>
-    <finalName>ws-soap</finalName>
   </build>
 </project>
